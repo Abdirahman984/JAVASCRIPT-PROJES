@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            padding: 15px 1.5rem;
+            border: none;
+            font-size: 1.2rem;
+            text-transform: capitalize;
+            cursor: pointer;
+            text-align: center;
+            margin: 2rem auto;
+            display: flex;
+            gap: 2rem;
+            border-radius: 20px;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>javasript time functions</h2>
+    <p>start counting after 3 seconds add alert message</p>
+    <p class="text"></p>
+    <button onclick="startTimer()">start</button>
+    <button onclick="clearTimer()">stop</button>
+
+
+
+    <script>
+        let timerManger = "";
+        function startTimer() {
+            timerManger = setInterval(function () {
+                alert("hellow guys")
+                console.log("start time")
+            }, 5000)
+        }
+
+        function clearTimer() {
+            clearInterval(timerManger)
+            console.log("stop working")
+        }
+
+    </script>
+</body>
+
+</html>
